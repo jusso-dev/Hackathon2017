@@ -1,14 +1,20 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      DOE - Incident Tracker
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <h1>DOE - Incident Tracker</h1>
+<br />
+  <h2><em>Track incidents effortlessly</em></h2>
+
+  <button ion-button (click)="get()">Get objects</button>
+
+  <ion-item *ngIf="objects">
+    {{objects.state}}
+  </ion-item>
 </ion-content>

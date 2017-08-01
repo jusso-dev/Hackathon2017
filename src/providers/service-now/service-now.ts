@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, RequestOptions } from '@angular/http';
+import { Http, RequestOptions, RequestOptionsArgs, BaseRequestOptions, Request, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Observable } from "rxjs/Observable";
 
@@ -17,9 +17,9 @@ export class ServiceNowProvider {
     let headers = new Headers();
     headers.append("Authorization", "Basic " + btoa(username + ":" + password));
 
-    RequestOptions
+    let options = new RequestOptions({headers:headers});
     
-    this.http.get("https://hackathon178.service-now.com/api/now/v1/table/incident?sysparm_query=active=true^ORDERBYDESCsys_updated_on", new RequestOptions({headers: headers}))
+    return this.http.get("https://hackathon178.service-now.com/api/now/v1/table/incident?sysparm_query=active=true^ORDERBYDESCsys_updated_on", options)
     .map(res => res.json())
   }
 }
