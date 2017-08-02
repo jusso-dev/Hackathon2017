@@ -22,3 +22,14 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+## Microsoft Bot Framework Chatbot
+
+## How to get started.
+
+1. git clone https://github.com/jusso-dev/Hackathon2017
+2. Open sln file in visual studio
+3. Enter microsoft bot app id and password into web.config file
+4. Navigate to RootDialog class and enter LUIS credituals
+5. Preformr Nuget restore
+5. Run project
+
