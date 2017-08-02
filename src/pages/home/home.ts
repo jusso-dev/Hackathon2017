@@ -17,7 +17,7 @@ export class HomePage {
 
   get() {
     this.objects = this.serviceNowApi.getIncidents().subscribe((data) => {
-      JSON.parse(data)
+      console.log(data)
       this.objects = data;
     })
   }

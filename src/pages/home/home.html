@@ -15,6 +15,6 @@
   <button ion-button (click)="get()">Get objects</button>
 
   <ion-item *ngIf="objects">
-    {{objects.state}}
+    {{objects | json}}
   </ion-item>
 </ion-content>
