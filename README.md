@@ -30,6 +30,6 @@ Substitute ios for android if not on a Mac.
 2. Open sln file in visual studio
 3. Enter microsoft bot app id and password into web.config file
 4. Navigate to RootDialog class and enter LUIS credituals
-5. Preformr Nuget restore
+5. Preform Nuget restore
 5. Run project
 
